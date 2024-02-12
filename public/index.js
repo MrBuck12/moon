@@ -2,23 +2,23 @@
 /**
  * @type {HTMLFormElement}
  */
-const form = document.getElementById("uv-form");
+const form = document.getElementById("form");
 /**
  * @type {HTMLInputElement}
  */
-const address = document.getElementById("uv-address");
+const address = document.getElementById("-address");
 /**
  * @type {HTMLInputElement}
  */
-const searchEngine = document.getElementById("uv-search-engine");
+const searchEngine = document.getElementById("");
 /**
  * @type {HTMLParagraphElement}
  */
-const error = document.getElementById("uv-error");
+const error = document.getElementById("");
 /**
  * @type {HTMLPreElement}
  */
-const errorCode = document.getElementById("uv-error-code");
+const errorCode = document.getElementById("");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -32,5 +32,5 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  location.href = .prefix + __.encodeUrl(url);
 });
